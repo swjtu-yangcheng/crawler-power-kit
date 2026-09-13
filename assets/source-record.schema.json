@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Crawler Supervisor Source Record",
+  "type": "object",
+  "required": [
+    "url",
+    "title",
+    "retrieved_at",
+    "source_type",
+    "relevant_claims"
+  ],
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "canonical_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "publisher_or_site": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "access_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_or_secondary": {
+      "enum": [
+        "primary",
+        "secondary",
+        "community",
+        "aggregate",
+        "unknown"
+      ]
+    },
+    "relevant_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "structured_fields": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unknown"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "journal_or_venue": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "authors": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "preprint_or_published": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retraction_or_correction_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
